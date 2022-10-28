@@ -9,7 +9,7 @@ import java.util.List;
 @RequestMapping(path = "/api/v1/palpayment") @RestController
 public class PayPalPaymentStrategyController {
     @GetMapping
-    public List< ? extends Payment> getPayments() {
+    public List < ? extends Payment > getPayments() {
         return List.of(new PayPalPaymentStrategy("James", "something"));
     }
 }

@@ -12,9 +12,9 @@
 
     <!-- Checks that no tab characters in the source code. -->
     <!-- Reports only first instance. -->
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="false"/>
-    </module>
+<!--    <module name="FileTabCharacter">-->
+<!--        <property name="eachLine" value="false"/>-->
+<!--    </module>-->
 
 
     <!-- Checks that no file is more than 1500 lines long. -->

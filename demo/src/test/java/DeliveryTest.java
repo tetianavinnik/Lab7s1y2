@@ -36,9 +36,11 @@ public class DeliveryTest {
 
     @Test
     public void testPrice() {
-        assertEquals("Your order: "+firstDelivery.getOrderNumber()+
-                " will be delivered by DHL", firstDelivery.deliver(firstOrder.getItems()));
-        assertEquals("Your order: "+secondDelivery.getOrderNumber()+
-                " will be delivered by post", secondDelivery.deliver(secondOrder.getItems()));
+        assertEquals("Your order: " + firstDelivery.getOrderNumber()
+                + " will be delivered by DHL",
+                firstDelivery.deliver(firstOrder.getItems()));
+        assertEquals("Your order: " + secondDelivery.getOrderNumber()
+                + " will be delivered by post",
+                secondDelivery.deliver(secondOrder.getItems()));
     }
 }
