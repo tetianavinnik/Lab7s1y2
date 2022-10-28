@@ -1,6 +1,5 @@
 package ua.edu.ucu.apps.demo.delivery;
 
-import java.lang.Math;
 import lombok.Getter;
 import java.util.LinkedList;
 

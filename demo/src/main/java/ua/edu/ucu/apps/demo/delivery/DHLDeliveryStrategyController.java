@@ -11,8 +11,6 @@ import ua.edu.ucu.apps.demo.order.Order;
 import ua.edu.ucu.apps.demo.payment.CreditCardPaymentStrategy;
 import ua.edu.ucu.apps.demo.payment.Payment;
 
-import java.util.List;
-
 @RequestMapping(path = "/api/v1/DHLdelivery") @RestController
 public class DHLDeliveryStrategyController {
     @GetMapping

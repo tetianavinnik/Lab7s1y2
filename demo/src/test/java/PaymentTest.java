@@ -7,22 +7,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PaymentTest {
-    private Payment payment1;
-    private Payment payment2;
+    private Payment firstPayment;
+    private Payment secondPayment;
 
     @BeforeEach
     public void init() {
-        payment1 =  new PayPalPaymentStrategy("John", "flowers");
-        payment2 = new CreditCardPaymentStrategy("Valentina", "roses");
+        firstPayment =  new PayPalPaymentStrategy("John", "flowers");
+        secondPayment = new CreditCardPaymentStrategy("Valentina", "roses");
     }
 
     @Test
     public void testPrice() {
-        assertEquals("John", payment1.getName());
-        assertEquals("Valentina", payment2.getName());
-        assertEquals("flowers", payment1.getDescription());
-        assertEquals("roses", payment2.getDescription());
-        assertTrue(payment1.pay(100));
-        assertTrue(payment2.pay(120));
+        assertEquals("John", firstPayment.getName());
+        assertEquals("Valentina", secondPayment.getName());
+        assertEquals("flowers", firstPayment.getDescription());
+        assertEquals("roses", secondPayment.getDescription());
+        assertTrue(firstPayment.pay(100));
+        assertTrue(secondPayment.pay(120));
     }
 }

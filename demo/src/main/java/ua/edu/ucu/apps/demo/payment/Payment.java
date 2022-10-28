@@ -11,13 +11,13 @@ public abstract class Payment {
      @Setter
      private boolean paymentCheck = false;
 
-     public boolean getPaymentCheck() {
-          return this.paymentCheck;
-     }
-
      public Payment(String name, String description) {
           this.name = name;
           this.description = description;
+     }
+
+     public boolean getPaymentCheck() {
+          return this.paymentCheck;
      }
 
      public boolean pay(double price) {

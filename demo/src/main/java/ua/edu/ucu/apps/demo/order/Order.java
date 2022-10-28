@@ -8,9 +8,9 @@ import java.util.LinkedList;
 
 @Setter@Getter
 public class Order {
-    LinkedList<Item> items = new LinkedList<>();
-    Payment payment;
-    Delivery delivery;
+    private LinkedList<Item> items = new LinkedList<>();
+    private Payment payment;
+    private Delivery delivery;
 
     public Order(Payment payment, Delivery delivery) {
         this.payment = payment;
@@ -27,7 +27,7 @@ public class Order {
 
     public double calculateTotalPrice() {
         int total = 0;
-        for (int i = 0; i<this.items.size(); i++) {
+        for (int i = 0; i < this.items.size(); i++) {
             total += this.items.get(i).getPrice();
         }
         return total;
