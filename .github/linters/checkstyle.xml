@@ -110,9 +110,9 @@
         <module name="NestedTryDepth">
             <property name="max" value="1"/>
         </module>
-        <module name="NoClone"/>
+<!--        <module name="NoClone"/>-->
         <module name="NoFinalizer"/>
-        <module name="SuperClone"/>
+<!--        <module name="SuperClone"/>-->
         <module name="SuperFinalize"/>
 
         <!-- Avoid masking of OutOfMemoryError or NullPointerExceptionError -->
